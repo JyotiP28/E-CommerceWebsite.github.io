@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, onitial-scale=1.0">
+    <title>About</title>
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="fashion.css">
+    <script src="fashion.js"></script>
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="fasion.jpg" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a  href="shop.html">Shop</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a id="lg-bag" href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="fa fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+        <h2>#KnowUS</h2>
+        <p>Save more with coupons & up to 70% off!.</p>
+
+    </section>
+    <section id="about-head" class="section-p1">
+        <img src="backshop.jpg" alt="">
+        <div>
+            <h2>Who we Are?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, veniam tempore, 
+                consequuntur laborum fugiat eveniet quasi aspernatur numquam optio accusantium ducimus accusamus 
+                beatae impedit adipisci soluta velit quo ipsam labore enim ipsa suscipit quidem sequi non incidunt. 
+                Aspernatur, suscipit amet.
+            </p>
+            <abbr title="">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Similique velit vitae suscipit laborum consequuntur assumenda, temporibus adipisci sunt unde?
+                Quae.</abbr>
+            <br><br>
+            <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%">Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Nemo tempore distinctio ullam exercitationem corporis provident,
+                doloremque praesentium ipsa? Saepe?</marquee>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="nav-logo" src="fasion.jpg" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Ganesh nager, kandiwali (West),Mumbai-400067</p>
+            <p><strong>Number:</strong> +01 2222 365 / (+91) 01 2345 6754</p>
+            <p><strong>Hours:</strong> 10:00-18:00, Mon - Sat</p>
+            </h4>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About US</a>
+            <a href="#">Delivery Information </a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img class="app" src="app.jpg" alt="">
+                <img class="google" src="google.jpg" alt="">
+            </div><br>
+
+            <p>Secured payment Gateways</p>
+            <img class="pay" src="payment.jpg" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>0 2021 , Tech etc - Html Css Ecommerce Template</p>
+        </div>
+    </footer>
+    <script>
+        const bar = document.getElementById('bar');
+        const close = document.getElementById('close');
+        const nav = document.getElementById('navbar');
+        if(bar){
+            bar.addEventListener("click", () => {
+                nav.classList.add('active');
+            })
+        }
+        if(close){
+            close.addEventListener("click", () => {
+                nav.classList.remove('active');
+            })
+        }
+
+     </script>
+</body>
+
+</html>
